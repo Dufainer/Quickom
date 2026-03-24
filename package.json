@@ -1,0 +1,27 @@
+{
+  "name": "quickom",
+  "version": "1.0.0",
+  "description": "Sistema de pedidos por WhatsApp con panel de administración para restaurante",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "nodemon server/index.js",
+    "start": "node server/index.js",
+    "bot": "node bot/index.js",
+    "admin": "npm --prefix admin run dev"
+  },
+  "dependencies": {
+    "@whiskeysockets/baileys": "^6.7.16",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.12.0",
+    "qrcode-terminal": "^0.12.0",
+    "redis": "^4.7.0",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
